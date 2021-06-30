@@ -1,0 +1,43 @@
+.navbar {
+    height: 85px;
+    &__link {
+        li {
+            padding-right: 1rem;
+            list-style-type: none;
+        }
+        .logo {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: $secondary-color;
+            margin-right: 0.5rem;
+        }
+        a {
+            color: $light-grey;
+        }
+    }
+    &__login {
+        a {
+            color: $light-grey;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        &__link {
+            flex-direction: column;
+            align-items: flex-start !important;
+            margin-left: 0.85rem;
+            li {
+                margin-top: 1rem;
+            }
+        }
+        &__login {
+            border-top: 2px solid #4d3f8b;
+            margin: 1.25rem 0.25rem;
+            width: 100%;
+        }
+    }
+}
