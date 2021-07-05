@@ -5,6 +5,9 @@
             padding-right: 1rem;
             list-style-type: none;
         }
+        .active {
+            color: $white-color;
+        }
         .logo {
             font-weight: 600;
             font-size: 1.5rem;
